@@ -28,6 +28,7 @@ def run_guessing_game
     case input
     when "exit"
       exit_guessing
+      break
     else 
       play(input.to_i)
     end
