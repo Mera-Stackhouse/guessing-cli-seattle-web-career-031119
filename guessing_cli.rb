@@ -27,7 +27,7 @@ def run_guessing_game
     input = gets.chomp
     case input
     when "exit"
-      exit_guessing
+      puts "Goodbye!"
       break
     else 
       play(input.to_i)
