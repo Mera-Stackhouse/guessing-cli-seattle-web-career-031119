@@ -5,9 +5,9 @@ def get_number
   rand(1..6)
 end
 
-def exit_guessing
-  puts "Goodbye"
-end
+# def exit_guessing
+#   puts "Goodbye"
+# end
 
 def play(number)
   computer = get_number
