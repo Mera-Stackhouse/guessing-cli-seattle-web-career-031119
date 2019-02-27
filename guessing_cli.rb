@@ -21,32 +21,28 @@ def play(number)
 end
 
 def run_guessing_game
-  input = ''
-  while input
-    puts "Guess"
-    input = gets.chomp
-    case input
-    when "exit"
-      puts "Goodbye!"
-      break
-    else 
-      play(input.to_i)
-    end
+  # input = ''
+  # while input
+  #   puts "Guess"
+  #   input = gets.chomp
+  #   case input
+  #   when "exit"
+  #     puts "Goodbye!"
+  #     break
+  #   else 
+  #     play(input.to_i)
+  #   end
+  # end
+  
+  
+  puts "Guess a number between 1 and 6."
+  input = gets.strip
+  if input == "exit"
+    puts "Goodbye!"
+  else
+    play(input.to_i)
+    run_guessing_game
   end
-        
-    
-  
-  
-  
-#  puts "Guess a number between 1 and 6."
-#  input = gets.strip
-#  if input == "exit"
-#    exit_guessing
-
-#  else
-#    play(input.to_i)
-#    run_guessing_game
-#  end
 end
 
 
