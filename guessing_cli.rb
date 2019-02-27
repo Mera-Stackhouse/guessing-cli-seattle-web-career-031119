@@ -27,7 +27,7 @@ def run_guessing_game
     exit_guessing
   else
     play(input.to_i)
-    run_guessing_game
+    #run_guessing_game
   end
 end
 
